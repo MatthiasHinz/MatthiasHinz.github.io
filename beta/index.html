@@ -5,11 +5,27 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 .w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+
+th, td {
+    border-bottom: 1px solid;
+}
+
+tr:hover {background-color: #aabbff}
+
+.lang {
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.w3-text-light-grey:hover{
+	color: yellow;
+}
 </style>
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
@@ -29,6 +45,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
   <!--<a href="#projects" onclick="w3_close()" class="w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a> -->
   <a href="#about" onclick="w3_close()" class="w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+  <a href="#skills" onclick="w3_close()" class="w3-padding"><i class="fa  fa-check-square-o fa-fw w3-margin-right"> </i>SKILLS</a> 
+  <a href="#works" onclick="w3_close()" class="w3-padding"><i class="fa fa-wrench fa-fw w3-margin-right"></i>WORKS</a> 
+
   <a href="#contact" onclick="w3_close()" class="w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
    
   <div class="w3-section w3-padding-top w3-large">
@@ -63,16 +82,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+  	
+ <div class="w3-card-4 w3-padding w3-border-black w3-red" >
+  <h3>Please note:</h3>
+  <p>This website ist still under construction. This beta version is still incomplete and was uploaded for testing purposes only.</p>
+</div> 
+  	
+  	<!-- About me -->
     <h4 id="about"><b>About Me</b></h4>
-    <p>My name is Matthias Markus Hinz. I recently graduated from the university with a master's degree in Geoinformatics and currently work as a scientific assistant with temporary employment. 
+    <p>My name is Matthias Markus Hinz. I recently graduated from the University with a master's degree in Geoinformatics and currently work as a scientific assistant with temporary employment. 
     	I am particularly interested in <b>Geographic Information Systems (GIS), remote sensing, spatial statistics, data science</b> and <b>software development</b>.
     </p>
      <p>
-     	I am passionate about <b>Geographic Information Science</b> because it can make a positive impact on the environment and scociety.
+     	I am passionate about <b>Geographic Information Science</b> because it can make a positive impact on the environment and society.
     </p>
     <p>
-    	At the moment, I am looking for new job opportunities that should match some of my above-mentioned interests. For me, it is crucial to work within a supportive and professional team. 
-    	Cooperating with national and international partners would a very appealing prospect. Please, do not hesitate to <a href="#contact">contact me</a> if you think your company or organisation is the right place.
+    	At the moment, I am looking for new job opportunities that should match some of my interests mentioned above. For me, it is crucial to work within a supportive and professional team. 
+    	Cooperating with national and international partners would a very appealing prospect. Please, do not hesitate to <a href="#contact">contact me</a> if you think your company or organization is the right place.
     </p>
      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
         <i class="fa fa-download w3-margin-right"></i>Download Resume (English)
@@ -81,27 +107,49 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <i class="fa fa-download w3-margin-right"></i>Download Resume (Deutsch)
       </button>
     <hr>
+    
+    	<!-- Skills section -->
+    <div class="w3-container">
+    <div class="w3-container w3-half" id="skills">
+    <div class="w3-card-4 w3-padding w3-theme-l5 ">
     <h4><i class="fa fa-check-circle fa-fw w3-margin-right"> </i>Professional Skills</h4>
-    
-    
-     <h4><i class="fa fa-globe fa-fw w3-margin-right"> </i>Languages</h4>
-     <ul>
-     <li>German: native language</li>
-     <li>English: proficient user</br>
-     	Official language in my past master's program, amongst others.</li>
-     <li>Spanish: independent user<br />
+    <p>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+					sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+   </p> </div>
+    </div>
+    <div class="w3-container w3-half">
+    <div class="w3-card-4 w3-padding w3-theme-l3 ">
+     <h4><i class="fa fa-globe fa-fw w3-margin-right"> </i>Languages</h4>     
+     <table>
+     <tr><td><font class="lang">German:&nbsp;&nbsp;</font>Native language</td></tr>
+     <tr><td><font class="lang">English:&nbsp;</font>Proficient user</br>
+     	Official language in my past master's program, amongst others.</br></tr>
+     <tr><td><font class="lang">Spanish:&nbsp;</font>Independent user<br />
      	Certified UNIcert® II level, equals B2 of the CEFR (<a href="documents/Hinz-UniCert2-Spanisch.pdf" target="_blank">view certificate</a>)  
-     </li>
-     </ul>
-    <!-- Progress bars / Skills -->
-    
+     </td></tr>
+     </table>
+	</div>
+    </div>
+</div>
 
 
-
-   
+   	<!-- Works section -->
     <hr>
-    
-    
+    <div class="w3-container">
+				<h4 id="works"><b>My Works and Projects</b></h4>
+				<p>ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+				ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+				dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+				amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+				ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+				duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</p> 
+	</div>
+
   <!-- Contact Section -->
   <div class="w3-container w3-padding-large w3-grey">
     <h4 id="contact"><b>Contact Me</b></h4>
@@ -118,7 +166,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 		</div>
 		
 
-		<div class="w3-third w3-teal">
+		<div class="w3-third w3-theme-d2">
 			
 						<p>
 				<a href="https://www.google.com/maps/d/embed?mid=1lhmgSMUOI0J5zY1Dah_lqR95Lng&hl=de" target="_blank"><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></a>
