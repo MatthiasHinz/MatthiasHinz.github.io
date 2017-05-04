@@ -44,4 +44,4 @@ The text introduces many concepts and ideas that could have and added value for 
 
 [2]	L. Tolstoy, The diaries of Leo Tolstoy: tr. by C. J. Hogarth and A. Sirnia. New York: Dutton, 1917.
 
-
+*Last update on May 4, 2017*
