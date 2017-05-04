@@ -1,0 +1,65 @@
+
+
+<!-- Blog entries -->
+<div class="w3-container w3-row-padding">
+	<!-- Blog entry -->
+	{% assign items = site.projects | sort: 'date' %}
+	 {% for project in site.projects reversed %}
+	
+	<div class="w3-half w3-margin-bottom" style="max-width: 400px">
+		<img src={{project.preview_image}} alt="Preview Image" style="width:100%">
+		<div class="w3-container w3-card-4 w3-white">
+			<div class="w3-container">
+				<h3><b>{{project.title}}</b></h3>
+				<h5>{{project.subtitle}}
+				
+				<span class="w3-opacity">{{ project.duration }}</span></h5>
+			</div>
+
+			<div class="w3-container">
+				<p>
+				{{ project.excerpt }}
+				</p>
+				<!--<div class="w3-row">
+					<div class="w3-col l6 m12 s12">
+						<p>
+							<a href="{{%project.url%}}">
+							<button class="w3-button w3-padding-large w3-white w3-border">
+								<b>READ MORE »</b>
+							</button></a>
+						</p>
+					</div>
+					{% if project.comments %}
+					<span class="w3-col l6 m12 w3-hide-small">
+						<p>
+					<div class="w3-padding w3-right" style="white-space: nowrap"><b>Comments </b>&nbsp;<span class="w3-badge"><a href="{{%project.url%}}#disqus_thread" style="text-decoration: none" >0</a></span></div>
+					
+					</p>
+					</span>
+					{% endif %}
+				</div>-->
+				
+				<div style="padding-bottom: 50px">
+					<div>
+						<p>
+							<a href="{{%project.url%}}">
+							<button class="w3-button w3-padding-large w3-white w3-border w3-left">
+								<b>READ MORE »</b>
+							</button></a>
+						</p>
+					</div>
+					{% if project.comments %}
+					<div>
+						<p>
+					<div class="w3-padding w3-right w3-hide-small" style="white-space: nowrap"><b>Comments </b>&nbsp;<span class="w3-badge"><a href="{{%project.url%}}#disqus_thread" style="text-decoration: none" >0</a></span></div>
+					
+					</p>
+					</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+<!-- END BLOG ENTRIES -->

@@ -1,11 +1,181 @@
-<html>
-  <meta charset="UTF-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta http-equiv="expires" content="0">
-<title>Matthias Markus Hinz - M.Sc in Geoinformatics</title>
-<body>
-<h1>Hi from Matthias!</h1>
-  <p style="color: #00aa00">This is going to be my personal website. I am currently working on the layout and content. </p>
-   <p style="color: #00aa00"> Please visit again soon! </p>
-</body>
-</html>
+---
+layout: default
+title: Home
+---
+
+<!-- About me -->
+<div class="w3-container w3-margin">
+	<h2 id="about"><b>About Me</b></h2>
+	<p>
+		My name is Matthias Markus Hinz. Recently, I graduated with a master's degree in Geoinformatics from the University of Münster, Germany.
+	</p>
+	<p>
+		I am passionate about <b>Geographic Information Science</b> because it makes a positive impact on the environment and society. I believe that it can help people in many different ways.
+		In particular, I am interested in <b>Geographic Information Systems (GIS), remote sensing, spatial statistics, data science</b> and <b>software development</b>.
+	</p>
+	<p>
+		Currently, I am looking for new job opportunities to develop my career. For me, it is crucial to work within a supportive and professional team.
+		I enjoy networking beyond geographical and cultural borders. My ideal job would involve collaborative projects on a national and international level. 
+		Please, do not hesitate to <a href="#contact">contact me</a> for interesting projects, especially if you think that your company or organization is the right place for me.
+	</p>
+	<a href="documents/CV-Europass-20170425-Hinz-EN.pdf" style="text-decoration: none" download >
+	<button class="w3-button w3-padding-large w3-margin-top w3-margin-bottom w3-theme-d3">
+		<i class="fa fa-download w3-margin-right"></i>Download Resume (English)
+	</button> </a>
+	<a href="documents/CV-Europass-20170426-Hinz-DE.pdf" style="text-decoration: none" download>
+	<button class="w3-button w3-padding-large w3-margin-top w3-margin-bottom  w3-theme-d3" >
+		<i class="fa fa-download w3-margin-right"></i>Download Resume (Deutsch)
+	</button> </a>
+
+</div>
+<!-- Skills section -->
+
+<div class="w3-container w3-margin w3-row-padding">
+
+	<h2 id="skills"><b>Professional Skills</b></h2>
+	<!--<h4 ><b>Professional Skills</b></h4><br/>-->
+	<div class="w3-container w3-half">
+		<div class="w3-padding w3-card-4 w3-white  w3-margin-bottom">
+			<h3><i class="fa fa-check-circle fa-fw w3-margin-right"> </i>IT Skills</h3>
+			<p>
+
+				<table class="whiteTable">
+					<tr>
+						<td><font class="lang">Programming languages: </font>Java and R, basic knowledge in C++ and C#</td>
+					</tr>
+					<tr>
+						<td><font class="lang">Web Technologies: </font>HTML, CSS, JavaScript, XML, Linked Data</td>
+					</tr>
+					<tr>
+						<td><font class="lang">Databases: </font>Relational Databases (PostgreSQL, MySQL, PostGIS)</td>
+					</tr>
+					<tr>
+						<td><font class="lang">Operating Systems: </font>Linux (Ubuntu) and Windows</td>
+					</tr>
+					<tr>
+						<td><font class="lang">GIS applications: </font>ArcGIS, ArcGIS for Server, QGIS, OGC Web Services, Geodatabases (e.g. PostGIS)</td>
+					</tr>
+
+				</table>
+
+			</p>
+			For practical examples, see my public activities at <a target="_blank" href="https://github.com/MatthiasHinz">GitHub</a> and <a target="_blank" href="https://openhub.net/accounts/MatthiasHinz">Open Hub</a>.
+		</div>
+
+	</div>
+	<div class="w3-container w3-half w3-margin-bottom">
+		<div class="w3-padding w3-card-4 w3-white ">
+			<h3><i class="fa fa-globe fa-fw w3-margin-right"> </i>Languages</h3>
+			<table class="whiteTable">
+				<tr>
+					<td><font class="lang">German:&nbsp;&nbsp;</font>Native language</td>
+				</tr>
+				<tr>
+					<td><font class="lang">English:&nbsp;</font>Proficient user</br>
+					Medium of instruction in my past Master's studies</br>
+				</tr>
+				<tr>
+					<td><font class="lang">Spanish:&nbsp;</font>Independent user
+					<br />
+					Certified UNIcert® II level, equals B2 of the CEFR (<a href="documents/Hinz-UniCert2-Spanisch.pdf" target="_blank">view certificate</a>) </td>
+				</tr>
+				<tr>
+					<td>Basic knowledge in French and Korean (which I would like to extend in future)</td>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+
+</div>
+
+<!-- Works section -->
+
+<div class="w3-container w3-theme-l3">
+	<div class="w3-margin">
+		<h2 id="works"><b>Works and Projects</b></h2>
+		<p>
+			This section presents some of my former and current works. I put a lot of time and effort in them, so my hope is that readers find them interesting, inspiring and even useful for their purposes.
+		</p>
+		{% include projects.html %}
+	</div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-large w3-grey">
+	<div class="w3-margin">
+		<h1 id="contact"><b>Contact Me</b></h1>
+		<div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+			<div class="w3-third w3-dark-grey">
+				<p class="center">
+					<a href="mailto:contact@matthiashinz.eu"><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></a>
+				</p>
+				<p class="center">
+					contact@matthiashinz.eu
+				</p>
+
+			</div>
+
+			<div class="w3-third w3-theme-d2">
+
+				<p class="center">
+					<a href="https://www.google.com/maps/d/embed?mid=1lhmgSMUOI0J5zY1Dah_lqR95Lng&hl=de&ll=47.13562818859009%2C6.084239528124954&z=5" target="_blank"><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></a>
+				</p>
+
+				<p class="center">
+					<b>Nordhausen, Germany</b>
+				</p>
+				<p  class="center" style="color: black">
+					Former residences:
+					<br/>
+					Münster (Westf.), Germany
+					<br/>
+					Castellón de la Plana, Spain
+				</p>
+				<!-- old colors #FF5555" #00aaaa"
+
+				<br />
+				<iframe src="https://www.google.com/maps/d/embed?mid=1lhmgSMUOI0J5zY1Dah_lqR95Lng&hl=de&ll=47.13562818859009%2C6.084239528124954&z=5" width="640" height="480"></iframe>
+				<br />
+				<br />-->
+			</div>
+			<div class="w3-third w3-dark-grey">
+				<p class="center">
+					<i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i>
+				</p>
+				<p class="center">
+					+49 1522 29438152
+				</p>
+			</div>
+
+		</div>
+		<hr class="w3-opacity">
+		<form action="https://formspree.io/contact@matthiashinz.eu" method="post">
+			<div class="w3-half">
+				<div class="w3-group w3-margin ">
+
+					<label>Name</label>
+					<input class="w3-input w3-border" type="text" name="name" required>
+				</div>
+				<div class="w3-group w3-margin ">
+					<label>Email</label>
+					<input class="w3-input w3-border" type="text" name="_replyto" required>
+				</div>
+			</div>
+			<div class="w3-half">
+				<div class="w3-group w3-margin ">
+					<label>Message</label>
+					<textarea class="w3-input w3-border" cols="30" rows="5"  name="message" required></textarea>
+				</div>
+
+			</div>
+			<button type="submit" value = "Send" class="w3-button w3-black w3-padding-large w3-margin-bottom  w3-center w3-margin">
+				<i class="fa fa-paper-plane w3-margin-right"></i>Send Message
+			</button>
+		</form>
+	</div>
+</div>
+
+
+		<!-- Load disqus -->
+		<script id="dsq-count-scr" src="//matthias-hinz.disqus.com/count.js" async></script>

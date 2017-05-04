@@ -1,0 +1,26 @@
+title: Matthias Hinz | GIS, Data Science, Software Development
+email: contact@matthiashinz.eu
+description: > # this means to ignore newlines until "baseurl:"
+  This is the public website of Matthias Markus Hinz, created for sharing personal information as well as professional experience about GIS, data science, and software development.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://matthiashinz.eu" # the base hostname & protocol for your site
+github_username:  matthiashinz
+
+# Build settings
+theme: minima
+
+markdown: kramdown
+highlighter: rouge
+
+collections:
+  projects:
+    output: true
+ 
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+      comments: true
