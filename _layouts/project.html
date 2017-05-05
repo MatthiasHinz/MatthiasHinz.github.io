@@ -2,62 +2,60 @@
 layout: default
 ---
 <div class= "w3-container w3-theme-l3">
-	<div class="w3-container w3-padding-large w3-margin">
 
-		<div class="w3-card-4 w3-white" style="max-width: 900px">
+	<div class="w3-card-4 w3-white w3-padding w3-margin-top w3-margin-bottom" style="max-width: 900px">
 
-			<div class="w3-container">
-				<img class="w3-margin" src={{page.preview_image}} style="width:100%; max-width: 450px;" align="right">
-				<h3><b>{{page.title}}</b></h3>
-				<h5>{{page.subtitle}}
-				<br/>
-				<span class="w3-opacity">{{ page.duration }}</span></h5>
+		<div class="w3-container">
+			<img class="w3-margin" src={{page.preview_image}} style="width:100%; max-width: 450px;" align="right">
+			<h3><b>{{page.title}}</b></h3>
+			<h5>{{page.subtitle}}
+			<br/>
+			<span class="w3-opacity">{{ page.duration }}</span></h5>
 
-				<p>
-					{{ content }}
-				</p>
+			<p>
+				{{ content }}
+			</p>
 
-				<div class="w3-row">
-					<div class="w3-col m8 s12">
-						<p>
-							<a href="/index.html#works">
-							<button class="w3-button w3-padding-large w3-white w3-border">
-								<b>Return to Overview »</b>
-							</button> </a>
-						</p>
-					</div>
-					<!--<div class="w3-col m4 w3-hide-small">
+			<div class="w3-row">
+				<div class="w3-col m8 s12">
 					<p>
-					<span class="w3-padding-large w3-right"><b>Comments </b> <span class="w3-tag">0</span></span>
+						<a href="/index.html#works">
+						<button class="w3-button w3-padding-large w3-white w3-border">
+							<b>Return to Overview »</b>
+						</button> </a>
 					</p>
-					</div>-->
 				</div>
-				{% if page.comments %}
-
-				<div id="disqus_thread"></div>
-				<script>
-					/**
-					 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-					 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-					/*
-					 var disqus_config = function () {
-					 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-					 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-					 };
-					 */
-					(function() {// DON'T EDIT BELOW THIS LINE
-						var d = document,
-						    s = d.createElement('script');
-						s.src = 'https://matthias-hinz.disqus.com/embed.js';
-						s.setAttribute('data-timestamp', +new Date());
-						(d.head || d.body).appendChild(s);
-					})();
-				</script>
-				<noscript>
-					Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-				</noscript>
-				{% endif %}
+				<!--<div class="w3-col m4 w3-hide-small">
+				<p>
+				<span class="w3-padding-large w3-right"><b>Comments </b> <span class="w3-tag">0</span></span>
+				</p>
+				</div>-->
 			</div>
+			{% if page.comments %}
+
+			<div id="disqus_thread"></div>
+			<script>
+				/**
+				 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+				/*
+				 var disqus_config = function () {
+				 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+				 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+				 };
+				 */
+				(function() {// DON'T EDIT BELOW THIS LINE
+					var d = document,
+					    s = d.createElement('script');
+					s.src = 'https://matthias-hinz.disqus.com/embed.js';
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<noscript>
+				Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+			</noscript>
+			{% endif %}
 		</div>
 	</div>
 </div>
