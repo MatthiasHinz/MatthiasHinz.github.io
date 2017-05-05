@@ -22,3 +22,10 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+$.getScript( "/js/jquery.scalem.js", function( data, textStatus, jqxhr ) {
+  //console.log( data ); // Data returned
+  if(textStatus == "success" && jqxhr.status == 200)
+  	console.log( "Scalem plugin was loaded." );
+  $('div[class~="highlighter-rouge"]').scalem();
+  
+});
