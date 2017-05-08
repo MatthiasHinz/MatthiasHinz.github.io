@@ -3,7 +3,7 @@ layout: project
 title: containerit
 subtitle: Reproducible research with Docker and R,
 duration: "December 2016 till March 2017"
-preview_image: "/img/pexels-photo-165228.jpeg"
+preview_image: "/img/pexels-photo-165228_resized.jpeg"
 ---
 *"Put your app into a container, and it runs from everywhere!"* —Docker allows packaging data and software into isolated containers that can be ported and shared. While you might spend many hours trying to install a program on your computer until it runs as it should, the container will run immediately. An appealing prospect, especially to data scientists!
 
