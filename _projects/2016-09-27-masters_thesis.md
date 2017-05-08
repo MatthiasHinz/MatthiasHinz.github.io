@@ -10,11 +10,11 @@ In which part of a Malian city the children suffer more often from malaria? How 
 
 I probably had to die a thousand deaths until I finished my work, but it succeeded in the end, and I am proud of it. I learned a lot!
 
-The thesis builds upon a paper from Scheider et al. [1]. It introduces an algebra that models data generation and describes how datasets are derived, in terms of types of reference systems. As a proof of concept, I adopted the algebra and created a prototypical extension for the [R environment for statistical computing](https://www.r-project.org/). The extension is able to record information in the background while the user sends commands to the R console. 
+The thesis builds upon a paper from Scheider et al. [1], which introduces an algebra that models data generation and describes how datasets are derived, in terms of types of reference systems. As a proof of concept, I adopted the algebra and created a prototypical extension for the [R environment for statistical computing](https://www.r-project.org/). The extension is able to record information in the background while the user sends commands to the R console. 
 
-The result is a data derivation graph that can be visualized and shared, similar to the image above. Users can review this graph and thus retrace processes of data generation and derivation to its origin. The graph is (semi-automatically) annotated in a way that the analysis and its results can be interpreted in terms of meaning and purpose.
+The result is a data derivation graph that can be visualized and shared, similar to the image above. Users can review this graph and thus retrace processes of data generation and derivation to its origins. Based on the algebra, the graph is (semi-automatically) annotated in a way enables interpretation in terms of meaning and purpose of the analysis and its results. The extension also contains mechanisms to validate analyses and to monitor whether they are carried out as expected.
 
-The text introduces many concepts and ideas that could have and added value for scientists interested in provenance and semantics.
+The thesis introduces many concepts and ideas that could have and added value for scientists interested in provenance and semantics: In future, it may be possible to analyze, compare and validate such data derivation graphs independent from the platform (R, ArcGIS, etc.). The algebra may enable recommendation systems, which suggest procedures that users can use for processing a given data set, and prompt warnings if a computation is not *meaningful from a scientific point of view*, even they can be carried out without technical or syntactical errors. 
 
 
 >*“Music is a combination of sounds differing, first, in regard to space, secondly, in
@@ -26,15 +26,6 @@ The text introduces many concepts and ideas that could have and added value for 
 >Leo Tolstoy [2] - July 14th, 1850
 
 
-<a href="/documents/Hinz-MSc_Thesis.pdf" style="text-decoration: none" download >
-<button class="w3-button w3-padding-large w3-margin-top w3-margin-bottom w3-theme-d3">
-	<i class="fa fa-download w3-margin-right"></i>Download Master's Thesis
-</button> </a>
-<a href="/documents/Hinz-MSc_Thesis-Digital_Appendices.zip" style="text-decoration: none" download >
-<button class="w3-button w3-padding-large w3-margin-top w3-margin-bottom  w3-theme-d3">
-	<i class="fa fa-download w3-margin-right"></i>Download Appendices
-</button> </a>
-
 ### External Links
 
 - [GitHub repository:  The SpatialSemantics package for R](https://github.com/MatthiasHinz/SpatialSemantics)
@@ -44,4 +35,13 @@ The text introduces many concepts and ideas that could have and added value for 
 
 [2]	L. Tolstoy, The diaries of Leo Tolstoy: tr. by C. J. Hogarth and A. Sirnia. New York: Dutton, 1917.
 
-*Last update on May 4, 2017*
+<a href="/documents/Hinz-MSc_Thesis.pdf" style="text-decoration: none" download >
+<button class="w3-button w3-padding-large w3-margin-top w3-margin-bottom w3-theme-d3">
+	<i class="fa fa-download w3-margin-right"></i>Download Master's Thesis
+</button> </a>
+<a href="/documents/Hinz-MSc_Thesis-Digital_Appendices.zip" style="text-decoration: none" download >
+<button class="w3-button w3-padding-large w3-margin-top w3-margin-bottom  w3-theme-d3">
+	<i class="fa fa-download w3-margin-right"></i>Download Appendices
+</button> </a>
+
+*Last update on May 8, 2017*

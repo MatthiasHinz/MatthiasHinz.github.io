@@ -6,7 +6,7 @@
 	{% assign items = site.projects | sort: 'date' %}
 	 {% for project in site.projects reversed %}
 	
-	<div class="w3-half w3-margin-bottom" style="max-width: 400px">
+	<div class="w3-half w3-margin-bottom project-container" style="max-width: 400px;">
 		<img src={{project.preview_image}} alt="Preview Image" style="width:100%">
 		<div class="w3-container w3-card-4 w3-white">
 			<div class="w3-container">
