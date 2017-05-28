@@ -28,8 +28,7 @@ defaults:
 exclude:
   - GIN2K-BOK-Tool-SNAPSHOT/css/demos
   - GIN2K-BOK-Tool-SNAPSHOT/jquery-ui-1.11.2.custom/index.html
-  - GIN2K-BOK-Tool-SNAPSHOT/yaml412-130728_resources/docs/
-      
+  - GIN2K-BOK-Tool-SNAPSHOT/yaml412-130728_resources/
 gems:
   - jekyll-last-modified-at
   - jekyll-sitemap
