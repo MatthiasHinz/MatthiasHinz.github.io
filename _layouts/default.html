@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 	<!-- General meta-information -->
-	<title>Matthias Hinz | GIS, Data Science, Software Development</title>
-	<meta name="author" content="Matthias Hinz">
-	<meta name="description" content="This is the public website of Matthias Markus Hinz, created for sharing personal information, projects and professional experience.">
+	<title>{{page.title}}{% if page.subtitle %}. {{page.subtitle}} by Matthias Hinz{% endif %}</title>
+	<meta name="author" content="Matthias Hinz">	
+	<meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{page.excerpt | strip_html | strip}}{% endif %}">
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 	
 	<!-- Open Graph metadata -->
-	<meta property="og:title" content="Matthias Hinz | GIS, Data Science, Software Development" />
-	<meta property="og:image" content="http://matthiashinz.eu/img/Matthias_small.jpg" />
-	<meta property="og:description" content="This is the public website of Matthias Markus Hinz, created for sharing personal information, projects and professional experience." />
-	<meta property="og:url" content="http://matthiashinz.eu" />
+	<meta property="og:title" content="{{page.title}}{% if page.subtitle %}. {{page.subtitle}} by Matthias Hinz{% endif %}" />
+	<meta property="og:image" content="{% if page.preview_image %}{{site.url}}{{page.preview_image}}{% else %}http://matthiashinz.eu/img/Matthias_small.jpg{% endif %}"/>
+	<meta property="og:description" content="{% if page.description %}{{page.description}}{% else %}{{page.excerpt | strip_html | strip}}{% endif %}" />
+	<meta property="og:url" content="{{site.url}}{{page.url}}" />
 	
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="expires" content="3600">
-	
-	
 	
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
