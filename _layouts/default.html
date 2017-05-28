@@ -1,99 +1,100 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
-	<!-- General meta-information -->
-	<title>{{page.title}}{% if page.subtitle %}. {{page.subtitle}} by Matthias Hinz{% endif %}</title>
-	<meta name="author" content="Matthias Hinz">	
-	<meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{page.excerpt | strip_html | strip}}{% endif %}">
-	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-	
-	<!-- Open Graph metadata -->
-	<meta property="og:title" content="{{page.title}}{% if page.subtitle %}. {{page.subtitle}} by Matthias Hinz{% endif %}" />
-	<meta property="og:image" content="{% if page.preview_image %}{{site.url}}{{page.preview_image}}{% else %}http://matthiashinz.eu/img/Matthias_small.jpg{% endif %}"/>
-	<meta property="og:description" content="{% if page.description %}{{page.description}}{% else %}{{page.excerpt | strip_html | strip}}{% endif %}" />
-	<meta property="og:url" content="{{site.url}}{{page.url}}" />
-	
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="expires" content="3600">
-	
-	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-		body, h1, h2, h3, h4, h5, h6 {
-			font-family: "Raleway", sans-serif
-		}
-		.w3-sidenav a, .w3-sidenav h4 {
-			font-weight: bold
-		}
-
-		th, td {
-			border-bottom: 1px solid;
-		}
-
-		.whiteTable tr:hover {
-			background-color: #CCCCCC
-		}
-
-		.blueTable tr:hover {
-			background-color: #79bff8
-		}/*#0c87eb} /*#aabbff}*/
-
-		.lang {
-			font-weight: bold;
-			font-family: monospace;
-		}
+	<head>
+		<!-- General meta-information -->
+		<title>{{page.title}}{% if page.subtitle %}. {{page.subtitle}} by Matthias Hinz{% endif %}</title>
+		<meta name="author" content="Matthias Hinz">
+		<meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{page.excerpt | strip_html | strip}}{% endif %}">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 		
-		p {
-		    max-width: 900px;
-		    text-align: justify;
-		}
+		<!-- Open Graph metadata -->
+		<meta property="og:title" content="{{page.title}}{% if page.subtitle %}. {{page.subtitle}} by Matthias Hinz{% endif %}" />
+		<meta property="og:image" content="{% if page.preview_image %}{{site.url}}{{page.preview_image}}{% else %}http://matthiashinz.eu/img/Matthias_small.jpg{% endif %}"/>
+		<meta property="og:description" content="{% if page.description %}{{page.description}}{% else %}{{page.excerpt | strip_html | strip}}{% endif %}" />
+		<meta property="og:url" content="{{site.url}}{{page.url}}" />
 		
-		@media (max-width: 480px) { 
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="expires" content="3600">
+		
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body, h1, h2, h3, h4, h5, h6 {
+				font-family: "Raleway", sans-serif
+			}
+			.w3-sidenav a, .w3-sidenav h4 {
+				font-weight: bold
+			}
+	
+			th, td {
+				border-bottom: 1px solid;
+			}
+	
+			.whiteTable tr:hover {
+				background-color: #CCCCCC
+			}
+	
+			.blueTable tr:hover {
+				background-color: #79bff8
+			}/*#0c87eb} /*#aabbff}*/
+	
+			.lang {
+				font-weight: bold;
+				font-family: monospace;
+			}
+			
 			p {
-				text-align: left;
+			    max-width: 900px;
+			    text-align: justify;
 			}
 			
-			.project-container{
-				padding: 0px;
-			}
-			/* Scale big text on small screens*/
-			h1 {
-			  font-size: 5.9vw;
-			}
-			h2 {
-			  font-size: 3.0vh;
+			@media (max-width: 480px) { 
+				p {
+					text-align: left;
+				}
+				
+				.project-container{
+					padding: 0px;
+				}
+				/* Scale big text on small screens*/
+				h1 {
+				  font-size: 5.9vw;
+				}
+				h2 {
+				  font-size: 3.0vh;
+				}
+				
 			}
 			
-		}
-		
-		
-		@media (min-width: 480px) { 
-			.project-container{
-				padding: 25px;
-			}
 			
-		}
-
-		/* text in center*/
-		.center{
-			text-align: center;			
-		}
-
-		/*
-		 w3-text-light-grey:hover{
-		 color: yellow;
-		 }
-
-		 */
-	</style>
-	<link rel="stylesheet" href="/css/normalize.css">
-	<link rel="stylesheet" href="/css/main.css">
-		<link rel="stylesheet" href="/css/pygment-default.css">
-	<script src="/js/vendor/modernizr-2.8.3.min.js"></script>
-
+			@media (min-width: 480px) { 
+				.project-container{
+					padding: 25px;
+				}
+				
+			}
+	
+			/* text in center*/
+			.center{
+				text-align: center;			
+			}
+	
+			/*
+			 w3-text-light-grey:hover{
+			 color: yellow;
+			 }
+	
+			 */
+		</style>
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/main.css">
+			<link rel="stylesheet" href="/css/pygment-default.css">
+		<script src="/js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
 	<body class="w3-light-grey w3-content" style="max-width:1600px">
 
 		<!-- Sidenav/menu -->
@@ -101,7 +102,7 @@
 			<br>
 			<div class="w3-container">
 				<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu"> <i class="fa fa-remove"></i> </a>
-				<img src="/img/Matthias_small.jpg" style="width:45%;" class="w3-round">
+				<img src="/img/Matthias_small.jpg" alt="portrait photo" style="width:45%;" class="w3-round">
 				<br>
 				<br>
 				<h4 class="w3-padding-0"><b>MATTHIAS HINZ</b></h4>
