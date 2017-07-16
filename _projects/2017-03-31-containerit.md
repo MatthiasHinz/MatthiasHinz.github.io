@@ -45,13 +45,16 @@ Still, setting up a proper Docker image with metadata requires some extra work; 
 
 `containerit` is still under development, but the core of it already works and was tested under Linux. In the future, it will hopefully become part of CRAN, the main repository of R extension packages. In the meantime, it can be installed from GitHub. For further information, please have a look at the external links below. 
 
+*Created on May 5, 2017*
+
+**Update on July 16th: Recently, the package's [draft vignette was published on the project website](http://o2r.info/2017/05/30/containerit-package/). It functions as an official documentation and elaborates the most important features in detail. Please follow the project, as the package is continuously improved.**
 
 ### Exernal Links:
+- [Draft vignette on the o2r website](http://o2r.info/2017/05/30/containerit-package/)
 - [The containerit-package on GitHub](https://github.com/o2r-project/containerit)
 - [The o2r project website](http://o2r.info/about/)
 - [o2r blog post: Investigating Docker and R](http://o2r.info/2016/12/15/investigating-docker-and-R/)
 - [o2r on GitHub](https://github.com/o2r-project)
 
-*Last update on May 4, 2017*
-
+*Last update on July 16th, 2017*
 
